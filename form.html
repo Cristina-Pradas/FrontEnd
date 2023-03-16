@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1 style="text-align:center;font-family: 'Abel', sans-serif">FICHA DE INSCRIPCIÓN</h1>
+    <form>
+        <label for="nombre" >Nombre completo:</label><!--input de text-->
+        <input ccc type="text">
+        <br/><br/>
+
+        <label for="nacimiento">Fecha de nacimiento:</label><!--input de date-->
+        <input id="nacimiento" name="nacimiento" type="date">
+        <br/><br/>
+
+        <label for="telefono">Numero de telefono:</label><!--input de número-->
+        <input id="telefono" name="telefono"type="number">
+        <br/><br/>
+        
+        <label for="email">Email:</label><!--input de email-->
+        <input id="email" name="email" type="email">
+        <br/><br/>
+
+        <label for="nivel">Nivel de inglés:</label><!-- selector "dropdown"-->
+        <select>
+            <option>A1/A2</option>
+            <option>B1/B2</option>
+            <option>C1/C2</option>
+        </select>
+        <br/><br/>
+
+        <label>Días de asistencia:</label><!--"radio" buttons (selecció individual)-->
+        <input type="radio" name="dias">Lunes y miércoles(19:30-21:00)
+        <input type="radio" name="dias">Martes y jueves(19:30-21:00)
+        <input type="radio" name="dias">Sábados y domingos(10:30-12:00)
+        <br/><br/>
+
+        <label>Como ha conocido nuestra academia de idiomas?(Puede escoger mas de una respuesta)</label><!--checkbox (selecció múltiple)-->
+        <input type="checkbox" name="conocer">Por redes sociales(Twitter,Instagram..)
+        <input type="checkbox" name="conocer">Por la página web
+        <input type="checkbox" name="conocer">Me la recomendó alguien
+        <br/><br/>
+
+        <!--area de text-->
+        <textarea style="height:200px;width: 300px" placeholder="Añade algun comentario que debamos saber"></textarea>
+        <br/><br/>
+
+        <button type="button" onclick="location.href='./thankyou.html'">Enviar</button><!--botó d'enviament-->
+
+
+
+
+
+    </form>
+</body>
+</html>
